@@ -7,7 +7,7 @@ import requests
 import json
 import random
 
-bot_token = '5455503418:AAG2IE1PsPKO3j5OSuBkGGWA1NVrTDFaaAs'
+bot_token = ''# your bot token
 chat_id = '840355587'
 phone = '997377322'
 
@@ -73,22 +73,3 @@ def start_spamming():
 
 # start_spamming()
 wikipedia()
-
-def spammer_for_liza():
-    try:
-        list1 = ['Чина', 'Чиназес', 'Чиза', 'Ми люди более', 'Урдесанчи', 'Санчизес', 'Санчіі', 'Чинаааааа', 'Балдьож',
-                 'ЧИНАААААА', 'xexexeexexexexxe', 'xaxaxaaxaxaxaxax', 'xyxyxyxyxyxyxxy','Прівет Ліза я твій фанат',
-                 'Ліза супер Ліза клас хто не вірить тому в глаз','За Лізу і двор стріляю в упор','Слава Україні!',
-                 'Слава Мерлоу!','Люблю цього бота']
-        counter = 0
-        for i in range(1000):
-            text_message = list1[random.randint(0, len(list1) - 1)]
-            requests.request(method='GET', url=f'https://api.telegram.org/bot{bot_token}/'
-                                               f'sendMessage?chat_id={-587876515}&text={text_message}')
-            time.sleep(1.5)
-            counter += 1
-    finally:
-        print(counter)
-
-
-# spammer_for_liza()
